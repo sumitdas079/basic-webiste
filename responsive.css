@@ -1,0 +1,132 @@
+
+/*for ipad like devices*/
+@media (max-width:1024px){
+    #navbar{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        background-color: rgba(11, 111, 177, 0.876);
+        width:100%;
+        position:absolute;
+        font-size:16px;
+    }
+    .navbar-links{
+        display:none;
+        width:100%;
+    }
+    .navbar-links ul{
+        width:100%;
+        flex-direction:column;
+    }
+    .navbar-links ul li{
+        text-align:center;
+    }
+    .navbar-links li a{
+        padding:0.5rem 1rem;
+    }
+    .navbar-links .active{
+        display: flex;
+    }
+    #heading h1{
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        padding-right:100px;
+        font-size: 3rem;
+        font-family:'Raleway', sans-serif;
+        font-weight:900;
+        color: white;
+    }
+    #home{
+        display:flex;
+        height:400px;
+    }
+    #services-container{
+        max-height: 90%;
+    }
+    #services{
+        display:flex;
+        flex-direction: column;
+        margin:25px;
+    }
+    .service-header{
+        padding:17px;
+    }
+    .box{
+        padding:25px;
+        margin-bottom:16px;
+    }
+    .BTN:hover{
+        transition:none;
+    }
+    .feet-top .website .mail  a{
+        font-size:16px;
+    }
+    .feet-top .content{
+        display:flex;
+        flex-direction:row;
+    }
+    .feet-top .content .services{
+        padding-right:24px;
+        padding-left:24px;
+    }
+    .feet-top .content .services li a{
+        font-size:16px;       
+    }
+    
+}
+
+
+@media (max-width:812px) {
+    #navbar{
+        position: absolute;
+    }
+    #heading h1{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .item{
+        display:none;
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
+    #home h1{
+        font-size: 2.6rem;
+    }
+    #home p{
+        font-size: 1.2rem;
+    }
+    .box{
+        padding:24px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .box img{
+        width:95%;
+    }
+
+    .about-container{
+        padding:42px;
+    }
+    .about-header{
+        margin:0px;
+    }
+
+    .FT .feet-top{
+        flex-direction:column;
+    }
+    .FT .feet-top .website{
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+    }
+    .FT .feet-top .website img{
+        display: flex;
+        justify-content: center;
+    }
+}

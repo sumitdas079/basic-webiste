@@ -1,0 +1,331 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgba(11, 111, 177, 0.876);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%; 
+    z-index: -1;
+    opacity: 6.6;
+}
+#heading h1{
+     display:none;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 75px;
+    margin: 6px 9px;
+    border:solid 1px black;
+    border-radius: 50%;
+}
+.navbar-links{
+    height:100%;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 4px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color:aqua;
+}
+
+.hamburgers{
+    display: none;
+}
+#bars{
+    display:block;
+    width:26px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+.item::after{
+    content:'';
+    display: block;
+    width:0;
+    height:2px;
+    background-color: aqua;
+    transition: width .3s;
+}
+.item:hover::after{
+    width: 100%;
+    transform: width .3s;
+}
+
+/*Home Styling*/
+#home{
+    display: flex;
+     flex-direction: column; 
+    padding: 50px 80px;
+    height:450px;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: #f4f4f4;
+    opacity:0.9; */
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('images/pexels-ken-tomita-389818.jpg') no-repeat center center/cover;
+    height: 654px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+
+#home h1{
+    font-size: 3.4rem;
+    font-family: 'Nunito', sans-serif;
+}
+#home p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*service styling*/
+#services{
+    margin: 34px;
+    display: flex;
+    height:100%;
+}
+#services-container{
+    max-height: 100%;
+    background-color: rgba(33,178,223);
+}
+.box{ 
+    padding: 34px;
+    margin: 2px 55px;
+    background: rgb(146, 213, 245);
+    margin-bottom: 20px;
+}
+
+.box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+.service-header{
+    padding:20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+.content{
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+/*     padding:1.5em; */
+}
+
+.content a{
+    color:blue;
+}
+.h-secondary{   
+    text-align: center;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+/*about us section*/
+.about-container{
+    max-height: 100%;
+    max-width:100%;
+    margin:0 auto;
+    padding:4rem;
+    background-color: rgb(33, 178, 223);
+}
+ .about-header{
+ 
+    margin:0px 48px 0px 48px;
+    padding:32px;
+    position:relative;
+    border-radius: 20px;
+    background-image:linear-gradient(to right,rgb(146, 213, 245),rgb(101, 162, 202)) ;
+}
+
+.about-header h2{
+    font-family:'Nunito', sans-serif;
+} 
+.about-header p{
+    padding: 8px 8px 8px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.BTN{
+    background-color: rgba(76, 144, 221, 0.993);
+    color:white; 
+    border:2px solid rgba(76, 144, 221, 0.993);
+    padding:13px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:14px ;
+    margin:4px 2px;
+    position:relative;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.BTN:hover{
+    background-color: white;
+    color:rgba(76, 144, 221, 0.993);
+    border:2px solid rgba(76, 144, 221, 0.993);
+    transition:all 0.2s ease-out;
+}
+
+/*footer design*/
+.FT .feet-top{
+    background-color: #135c7e; 
+    padding:32px 20px 10px 20px;
+    border-top:1px solid #dedede;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+}
+
+.website #image{
+    height:66px;
+    border:1px solid #dedede;
+    border-radius: 50%;
+    margin: 6px 9px;
+}
+.website {
+    color:white;
+    padding:0px 73px 0px 56px;
+}
+.website h2{
+    font-family: 'Nunito', sans-serif;
+    padding:8px 0px 10px 0px;
+}
+.mail{
+    padding:10px 0px 10px 0px;
+}
+ .mail a{
+    text-decoration:none;
+    margin:auto ;
+    position:static;
+    color:white; 
+
+}
+.mail a:hover{
+    color:rgb(0, 195, 255);
+    transform: scale(1.1); 
+    transition:all 0.2s ease-out;
+} 
+.icons{
+    margin-top: 3px;
+    margin-bottom:8px;
+    padding:auto;
+    text-decoration: none;
+}
+
+.icons .fa{
+    padding:13px;
+    text-align:center;
+    text-decoration: none;
+    border-radius:50%;
+    width:17px;
+}
+.fa:hover{
+    opacity:2;
+    transform: scale(1.1);
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.feet-top .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.feet-top .content .services{
+    padding:28px 0px 0px 100px;
+}
+.feet-top .content .services li{
+    padding-bottom: 6px;
+    padding-top: 16px;
+    list-style: none;
+}
+.feet-top .content .services li a{
+    color:white; 
+    text-decoration: none;
+    list-style:none;
+    font-size: 19px;
+    font-weight: 200;
+}
+.feet-top .content .services li a:hover{
+    color:rgb(0, 195, 255);
+    /* font-size:20px; */
+    transform: scale(1.1);
+    transition:all 0.2s ease-out;
+    
+}
+.content .services  li:first-child{
+    list-style: none;
+    padding-bottom: 15px;
+    font-size:22px;
+    font-weight: 600;
+    border-bottom: rgb(16, 47, 71) solid 1px;
+}
+
+.feet-below{
+    padding:1rem;
+    background-color: #4083b6;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
